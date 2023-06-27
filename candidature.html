@@ -112,7 +112,7 @@
 
                         <input type="hidden" name="_autoresponse" value="Merci de votre candidature, nous reviendrons vers vous dans les plus brefs délais.">
 
-                        <input type="hidden" name="_next" value="https://valentin1538.github.io/BTL-Transports/candidature.html#Candidature" >
+                        <input type="hidden" name="_next" value="https://valentin1538.github.io/BTL-Transports/candidature_reussie.html#sucess" >
 
                         <input type="hidden" name="_subject" value="Nouvelle Candidature !">
                             <div class="row g-3">
@@ -289,6 +289,23 @@
 
         })
     </script> -->
+
+    <script>
+         document.getElementById("submit").addEventListener("click", function(e){
+            //   enable alert
+            setTimeout(() => {
+                document.querySelector(".alert").style.display = "block";
+                }, 1000);
+
+                //   remove the alert
+            setTimeout(() => {
+                document.getElementById("CandidatureForm").reset();
+                document.querySelector(".alert").style.display = "none";
+                }, 4000);
+                
+
+        })
+    </script>
 
 
     <!-- JavaScript Libraries -->
