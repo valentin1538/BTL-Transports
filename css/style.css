@@ -5,10 +5,18 @@
     --light: #f8f2f0;
     --dark: #060315;
     --white: #ffffff;
-}   
+} 
+
+* {
+    box-sizing: border-box;
+    
+    
+}
 
 body {
     background-color: #d6d4d4;
+    background-image: url(../img/route.png);
+    background-position: 50% 0;
 }
 
 .fw-medium {
@@ -378,8 +386,9 @@ body {
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    box-shadow: 0 0 45px rgba(0, 0, 0, 0.281);
     animation: pulse 1s ease-out .5s;
+    background-color: #d6d4d4;
 
 }
 
@@ -501,4 +510,87 @@ body {
     box-shadow: 0 0 45px rgba(0, 0, 0, .07);
     
 }
+
+/*** Cookies ***/
+
+.wrapper {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    transition: right 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  .wrapper.hide {
+    left: -560px;
+  }
+  .wrapper img{
+    max-width: 100px;
+  }
+  .wrapper header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+  header i {
+    color: #b11b1d;
+    font-size: 32px;
+  }
+  header h2 {
+    color: #b11b1d;
+    font-weight: 500;
+  }
+  .wrapper .data {
+    margin-top: 16px;
+  }
+  .wrapper .data p {
+    color: #333;
+    font-size: 16px;
+  }
+  .data p a {
+    color: #dc3545;
+    text-decoration: none;
+  }
+  .data p a:hover {
+    color: #fff;
+  }
+  .wrapper .buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .buttons .button {
+    border: none;
+    color: #fff;
+    padding: 8px 0;
+    border-radius: 4px;
+    background: #b11b1d;
+    border: 2px solid #b11b1d;
+    cursor: pointer;
+    width: calc(100% / 2 - 10px);
+    transition: all 0.2s ease;
+  }
+  .buttons #acceptBtn:hover {
+    background-color: #dc3545;
+    border: 2px solid #dc3545;
+  }
+  #declineBtn {
+    border: 2px solid #dc3545;
+    background-color: #fff;
+    color: #b11b1d;
+  }
+  #declineBtn:hover {
+    background-color: #dc3545;
+    color: #fff;
+  }
+
+  
+
 
